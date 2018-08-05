@@ -98,7 +98,7 @@ BSD, Apache 2.0 License
 ## Author Info
 
 - Senthur Raj 
-- Btech - Production Engineering,
+- imsenthur@gmail.com
 - National Institute of Technology, Tiruchirappalli.
 
 [Back To The Top](#cowIMU_plugin)
