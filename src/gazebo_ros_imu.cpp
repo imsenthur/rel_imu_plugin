@@ -62,7 +62,6 @@ void GazeboRosIMU::Load(physics::ModelPtr _parent, sdf::ElementPtr _sdf)
 // Load the controller
 void GazeboRosIMU::LoadThread()
 {
-  ROS_INFO_NAMED("Greet", "therikka vidrom!");
   // load parameters
   this->robot_namespace_ = "";
   if (this->sdf->HasElement("robotNamespace"))
@@ -182,6 +181,7 @@ void GazeboRosIMU::LoadThread()
   this->last_time_ = this->world_->GetSimTime();
 #endif
 
+//Modified:
   // this->initial_pose_ = this->link->GetPose();
 #if GAZEBO_MAJOR_VERSION >= 8
   this->last_vpos_ = this->link->WorldLinearVel();
@@ -234,6 +234,7 @@ void GazeboRosIMU::UpdateChild()
     ignition::math::Quaterniond rot;
     ignition::math::Vector3d pos;
 
+//Modified
     // Get Pose/Orientation ///@todo: verify correctness
 #if GAZEBO_MAJOR_VERSION >= 8
     pose = this->link->RelativePose();
