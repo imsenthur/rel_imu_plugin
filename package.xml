@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>cow_plugins</name>
+  <version>2.5.17</version>
+  <description>
+    A sensor plugin for gazebo to compute orientation, relative angular velocity and relative angular acceleration of a link with respect to its parent frame.
+  </description>
+
+  <maintainer email="imsenthur@gmail.com">Senthur Raj</maintainer>
+  <license>BSD, Apache 2.0</license>
+  <url type="repository">https://github.com/imsenthur/cowIMU_plugin</url>
+  <author>Senthur Raj</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>gazebo_dev</build_depend>
+  <exec_depend>gazebo_dev</exec_depend>
+
+  <depend>gazebo_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>angles</depend>
+  <depend>rosconsole</depend>
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <depend>std_msgs</depend>
+</package>
